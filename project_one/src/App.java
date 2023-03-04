@@ -3,6 +3,6 @@ public class App {
         System.out.println("Hello, World!");
         System.out.println("args");
 
-        System.out.println(1971-2023);
+        System.out.println(1971 - 2023);
     }
 }
