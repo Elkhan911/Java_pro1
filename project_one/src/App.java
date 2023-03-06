@@ -30,12 +30,34 @@ public class App {
 
     // 4. Напишите программу, которая считывает три целых числа и выводит их
     // произведение.
-    Scanner sc = new Scanner(System.in);
+    Scanner sc4 = new Scanner(System.in);
 
-    byte number4A = sc.nextByte();
-    byte number4B = sc.nextByte();
-    byte number4C = sc.nextByte();
+    byte number4A = sc4.nextByte();
+    byte number4B = sc4.nextByte();
+    byte number4C = sc4.nextByte();
 
     System.out.println(number4A * number4B * number4C);
+
+    /*
+     * 5.
+     * Напишите программу, которая считывает целое число и выводит текст,
+     * аналогичный приведенному в примере. Пробелы, знаки препинания, заглавные и
+     * строчные буквы важны!
+     * 
+     * Вводится целое число, по модулю не превосходящее 10000.
+     * Выведите сначала фразу "The next number for the number ", затем введенное
+     * число, затем слово " is ", окруженное пробелами, затем формулу для следующего
+     * за введенным числа, наконец, знак точки без пробела. Аналогично в следующей
+     * строке для предыдущего числа.
+     */
+
+    Scanner sc5 = new Scanner(System.in);
+
+    int numb5A = sc5.nextInt();
+    var numb5B = numb5A + 1;
+    var numb5C = numb5A - 1;
+
+    System.out.print("The next number for the number " + numb5A + " is " + numb5B + "/n"
+        + "The previous number for the number" + numb5A + " is " + numb5C);
   }
 }
