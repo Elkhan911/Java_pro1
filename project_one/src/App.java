@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class App {
   public static void main(String[] args) throws Exception {
 
@@ -14,8 +16,8 @@ public class App {
     // соответственно. Выведите построчно на экран их сумму, разность, произведение
     // и частное.
 
-    var a3 = 5;
-    var b3 = 0.4;
+    int a3 = 5;
+    double b3 = 0.4;
     var sum3 = a3 + b3;
     var subtraction3 = a3 - b3;
     var multiplication3 = a3 * b3;
@@ -28,14 +30,12 @@ public class App {
 
     // 4. Напишите программу, которая считывает три целых числа и выводит их
     // произведение.
+    Scanner sc = new Scanner(System.in);
 
-    var a4 = 10;
-    var b4 = 2;
-    var c4 = 3;
+    byte number4A = sc.nextByte();
+    byte number4B = sc.nextByte();
+    byte number4C = sc.nextByte();
 
-    var multiplication4 = a4 * b4 * c4;
-
-    System.out.println(multiplication4);
-
+    System.out.println(number4A * number4B * number4C);
   }
 }
