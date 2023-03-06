@@ -30,11 +30,11 @@ public class App {
 
     // 4. Напишите программу, которая считывает три целых числа и выводит их
     // произведение.
-    Scanner sc4 = new Scanner(System.in);
+    Scanner value4 = new Scanner(System.in);
 
-    byte number4A = sc4.nextByte();
-    byte number4B = sc4.nextByte();
-    byte number4C = sc4.nextByte();
+    byte number4A = value4.nextByte();
+    byte number4B = value4.nextByte();
+    byte number4C = value4.nextByte();
 
     System.out.println(number4A * number4B * number4C);
 
@@ -51,13 +51,34 @@ public class App {
      * строке для предыдущего числа.
      */
 
-    Scanner sc5 = new Scanner(System.in);
+    Scanner value5 = new Scanner(System.in);
 
-    int numb5A = sc5.nextInt();
+    int numb5A = value5.nextInt();
     var numb5B = numb5A + 1;
     var numb5C = numb5A - 1;
 
-    System.out.print("The next number for the number " + numb5A + " is " + numb5B + "/n"
-        + "The previous number for the number" + numb5A + " is " + numb5C);
+    System.out.println("The next number for the number " + numb5A + " is " + numb5B + ". ");
+    System.out.println("The previous number for the number " + numb5A + " is " + numb5C + ".");
+
+    /*
+     * 6.
+     * На одной строчке через пробел записаны два целых числа: длина и ширина
+     * прямоугольника. Вычислите его площадь и периметр (именно в таком порядке).
+     * Результаты выведите в две строки.
+     */
+
+    Scanner value6 = new Scanner(System.in);
+
+    int sideA6 = value6.nextInt();
+    int sideB6 = value6.nextInt();
+
+    // Площадь
+    var S6 = sideA6 * sideB6;
+
+    // Периметр
+    var P6 = (sideA6 + sideB6) * 2;
+
+    System.out.println(S6);
+    System.out.println(P6);
   }
 }
