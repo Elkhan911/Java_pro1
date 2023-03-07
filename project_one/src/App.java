@@ -120,5 +120,22 @@ public class App {
       System.out.println(numb9B);
     }
 
+    /*
+     * 10. С клавиатуры построчно вводятся три строки. Необходимо определить, все ли
+     * он равны. Если да, то вывести "Yes", в противном случае - "No".
+     */
+
+    Scanner value10 = new Scanner(System.in);
+
+    String str10A = value10.nextLine();
+    String str10B = value10.nextLine();
+    String str10C = value10.nextLine();
+
+    if (str10A.equals(str10B) && str10B.equals(str10C) && str10C.equals(str10A)) {
+      System.out.println("Yes");
+    } else {
+      System.out.println("No");
+    }
+
   }
 }
