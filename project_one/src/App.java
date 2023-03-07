@@ -80,5 +80,20 @@ public class App {
 
     System.out.println(S6);
     System.out.println(P6);
+
+    /*
+     * 7.Дано целое число n. Выведите следующее за ним четное число. При решении
+     * этой задачи нельзя использовать условную инструкцию if и циклы.
+     * Подсказка: Подумайте, что будет оставаться в остатке при делении на 2 у
+     * чётных и у нечётных чисел.
+     */
+
+    Scanner value7 = new Scanner(System.in);
+    int numb7 = value7.nextInt();
+    var result7 = numb7 % 2 + 1;
+
+    System.out.println(numb7);
+    System.out.println(result7);
+
   }
 }
