@@ -106,8 +106,28 @@ public class App {
     System.out.println(result8);
 
     /*
-     * 9.
+     * 9. С клавиатуры вводятся два числа. Выведите на экран большее из них
      */
+
+    Scanner value9 = new Scanner(System.in);
+
+    int numb9A = value9.nextInt();
+    int numb9B = value9.nextInt();
+
+    if (numb9A > numb9B) {
+      System.out.println(numb9A);
+    } else {
+      System.out.println(numb9B);
+    }
+
+    Scanner sc = new Scanner(System.in);
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    if (a > b) {
+      System.out.println(a);
+    } else {
+      System.out.println(b);
+    }
 
   }
 }
