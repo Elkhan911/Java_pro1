@@ -1,3 +1,4 @@
+import java.security.DrbgParameters.NextBytes;
 import java.util.Scanner;
 
 public class App {
@@ -152,6 +153,16 @@ public class App {
     } else {
       System.out.println("Error");
     }
+
+    /*
+     * 12. Напишите программу, которая считывает 1 действительное число и выводит
+     * значение в два раза меньше.
+     */
+
+    Scanner value12 = new Scanner(System.in);
+    float numb12 = value12.nextFloat();
+
+    System.out.println(numb12 / 2);
 
   }
 }
