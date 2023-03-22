@@ -122,7 +122,7 @@ public class App {
 
     /*
      * 10. С клавиатуры построчно вводятся три строки. Необходимо определить, все ли
-     * он равны. Если да, то вывести "Yes", в противном случае - "No".
+     * они равны. Если да, то вывести "Yes", в противном случае - "No".
      */
 
     Scanner value10 = new Scanner(System.in);
@@ -135,6 +135,22 @@ public class App {
       System.out.println("Yes");
     } else {
       System.out.println("No");
+    }
+
+    /*
+     * 11. Напишите программу, которая считывает 2 действительных числа и выводит их
+     * частное. Если это невозможно, то выводит слово "Error"
+     */
+
+    Scanner value11 = new Scanner(System.in);
+
+    int numb11A = value11.nextInt();
+    int numb11B = value11.nextInt();
+
+    if (numb11A % numb11B == 0 && numb11B != 0) {
+      System.out.println(numb11A / numb11B);
+    } else {
+      System.out.println("Error");
     }
 
   }
