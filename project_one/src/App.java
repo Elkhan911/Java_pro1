@@ -1,4 +1,3 @@
-import java.security.DrbgParameters.NextBytes;
 import java.util.Scanner;
 
 public class App {
@@ -155,7 +154,7 @@ public class App {
     }
 
     /*
-     * 12. Напишите программу, которая считывает 1 действительное число и выводит
+     * 12. Напишите программу, которая считывает действительное число и выводит
      * значение в два раза меньше.
      */
 
@@ -163,6 +162,17 @@ public class App {
     float numb12 = value12.nextFloat();
 
     System.out.println(numb12 / 2);
+
+    /*
+     * 13. Вася приехал в Америку и он очень любит кофе. В Америке приобрести этот
+     * напиток можно лишь лицам достигшим возраста 21 год. Напишите программу,
+     * которая считает возраст Васи и выведет ответ ("Да"/"Нет") на вопрос: попьёт
+     * ли Вася сегодня кофе?
+     */
+
+    Scanner value13 = new Scanner(System.in);
+    int age13 = value13.nextInt();
+    System.out.println(age13 >= 21 ? "Yes" : "No");
 
   }
 }
