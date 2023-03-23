@@ -187,5 +187,21 @@ public class App {
     var c = Math.pow(numb14A + numb14B, 2);
 
     System.out.println(c);
+
+    /*
+     * 15. Пользователь вводит натуральное число. Необходимо вывести все четные
+     * числа, не превосходящие этого числа.
+     */
+
+    Scanner value15 = new Scanner(System.in);
+    int numb15 = value15.nextInt();
+
+    int i = 2;
+
+    while (i < numb15) {
+      i += 2;
+      System.out.println(i);
+    }
+
   }
 }
