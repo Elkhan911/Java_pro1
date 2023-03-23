@@ -174,5 +174,18 @@ public class App {
     int age13 = value13.nextInt();
     System.out.println(age13 >= 21 ? "Yes" : "No");
 
+    /*
+     * 14. Вводится два целых числа.
+     * Найдите квадрат суммы чисел
+     */
+
+    Scanner value14 = new Scanner(System.in);
+
+    int numb14A = value14.nextInt();
+    int numb14B = value14.nextInt();
+
+    var c = Math.pow(numb14A + numb14B, 2);
+
+    System.out.println(c);
   }
 }
