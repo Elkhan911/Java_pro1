@@ -196,13 +196,34 @@ public class App {
     Scanner value15 = new Scanner(System.in);
     int numb15 = value15.nextInt();
 
-    int i = 2;
+    int i15 = 2;
 
-    while (i < numb15) {
-      i += 2;
-      System.out.println(i);
+    while (i15 < numb15) {
+      i15 += 2;
+      System.out.println(i15);
     }
 
-    //
+    /*
+     * 16. Напишите программу, которая выведет слово "Привет" - 10 раз
+     */
+
+    for (int i16 = 1; i16 <= 10; i16++) {
+      System.out.println("Привет");
+    }
+
+    /*
+     * 17. Напишите программу, которая находит сумму натуральных чисел от 1 до n,
+     * где n вводится с клавиатуры.
+     */
+
+    Scanner value17 = new Scanner(System.in);
+    int numb17 = value17.nextInt();
+    var sum17 = 0;
+
+    for (int i17 = 1; i17 < numb17; i17++) {
+      sum17 += i17;
+      System.out.println(sum17);
+    }
+
   }
 }
