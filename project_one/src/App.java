@@ -225,5 +225,17 @@ public class App {
       System.out.println(sum17);
     }
 
+    /*
+     * 18. Создайте массив, в котором будут храниться значения. Выведите эти
+     * значения на экран
+     */
+
+    int array18[] = { 11, 2, 13, 4 };
+
+    for (var i18 = 0; i18 < array18.length; i18++) {
+      System.out.println(array18[i18]);
+    }
+
+    // https://stepik.org/lesson/399116/step/4?unit=388206
   }
 }
