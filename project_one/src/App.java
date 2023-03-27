@@ -237,5 +237,17 @@ public class App {
     }
 
     // https://stepik.org/lesson/399116/step/4?unit=388206
+
+    /*
+     * 19. Создайте массив, в котором будут храниться значения. Выведите эти
+     * значения на в квадрате
+     */
+
+    int array19[] = { 10, 11, 12, 13 };
+
+    for (var i = 0; i < array19.length; i++) {
+      System.out.println(Math.pow(array19[i], 2));
+    }
+
   }
 }
