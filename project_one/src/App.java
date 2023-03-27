@@ -249,5 +249,16 @@ public class App {
       System.out.println(Math.pow(array19[i], 2));
     }
 
+    /*
+     * 20. Создайте массив, в котором будут храниться значения в виде строк.
+     * Выведите эти значения в обратном порядке
+     */
+
+    String array20[] = { "привет", "добрый", "мир" };
+
+    for (var i = array20.length - 1; i >= 0; i--) {
+      System.out.println(array20[i]);
+    }
+
   }
 }
