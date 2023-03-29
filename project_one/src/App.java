@@ -260,5 +260,16 @@ public class App {
       System.out.println(array20[i]);
     }
 
+    /*
+     * 21. Создайте массив, в котором будут храниться значения в виде чисел.
+     * Выведите первое и последнее значение. Выведите сумму этих значений
+     */
+
+    int[] array21 = { 10, 20, 30, 40, 50 };
+
+    System.out.println(array21[0]);
+    System.out.println(array21[array21.length - 1]);
+    var sum21 = array21[0] + array21[array21.length - 1];
+    System.out.println(sum21);
   }
 }
