@@ -196,18 +196,18 @@ public class App {
     Scanner value15 = new Scanner(System.in);
     int numb15 = value15.nextInt();
 
-    int i15 = 2;
+    int counter15 = 2;
 
-    while (i15 < numb15) {
-      i15 += 2;
-      System.out.println(i15);
+    while (counter15 < numb15) {
+      counter15 += 2;
+      System.out.println(counter15);
     }
 
     /*
      * 16. Напишите программу, которая выведет слово "Привет" - 10 раз
      */
 
-    for (int i16 = 1; i16 <= 10; i16++) {
+    for (int i = 1; i <= 10; i++) {
       System.out.println("Привет");
     }
 
@@ -220,8 +220,8 @@ public class App {
     int numb17 = value17.nextInt();
     var sum17 = 0;
 
-    for (int i17 = 1; i17 < numb17; i17++) {
-      sum17 += i17;
+    for (int i = 1; i < numb17; i++) {
+      sum17 += i;
       System.out.println(sum17);
     }
 
@@ -232,8 +232,8 @@ public class App {
 
     int array18[] = { 11, 2, 13, 4 };
 
-    for (var i18 = 0; i18 < array18.length; i18++) {
-      System.out.println(array18[i18]);
+    for (var i = 0; i < array18.length; i++) {
+      System.out.println(array18[i]);
     }
 
     // https://stepik.org/lesson/399116/step/4?unit=388206
@@ -271,5 +271,19 @@ public class App {
     System.out.println(array21[array21.length - 1]);
     var sum21 = array21[0] + array21[array21.length - 1];
     System.out.println(sum21);
+
+    /*
+     * 22. Дан массив, состоящий из целых чисел. Нумерация элементов начинается с 0.
+     * Напишите программу, которая выведет элементы массива, номера которых четны
+     */
+
+    int[] array22 = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+
+    for (int i = 0; i < array22.length; i++) {
+      if (array22[i] % 2 == 0 && array22[i] != 0) {
+        System.out.println(array22[i]);
+      }
+    }
+  
   }
 }
