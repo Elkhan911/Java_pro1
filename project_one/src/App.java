@@ -300,7 +300,7 @@ public class App {
       }
     }
 
-  }
+
 
   /*
    * 1p. Объяви метод multiply с двумя параметрами — целыми числами a и b. В теле
@@ -350,4 +350,19 @@ public class App {
     return (a + b + c) / 3;
   }
 
+  /*
+   * 5p. В приложении прогноза погоды хранятся переменные со средней температурой
+   * воздуха на сегодня и завтра. Объяви переменную isColder: пусть она проверяет,
+   * будет ли завтра холоднее, чем сегодня. Выведи её на экран.
+   */
+
+double todayWeather = 25.5; // погода на сегодня
+double tomorrowWeather = 32.3; // погода на завтра
+
+boolean isColder = todayWeather>tomorrowWeather;
+System.out.println(isColder);
+
+
+
+}
 }
