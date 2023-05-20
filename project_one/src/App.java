@@ -322,4 +322,32 @@ public class App {
     System.out.println(carName + " " + year + " года выпуска");
   }
 
+  /*
+   * 3p. Допиши метод sayHello, который будет приветствовать студентов на курсе.
+   * Он принимает строковый параметр name — имя студента — и выводит в
+   * консоль
+   * строку Добро пожаловать на курс, имя_студента!. Вызывать метод не нужно
+   */
+
+  public void sayHello(String name) {
+    System.out.println("Добро пожаловать на курс, " + name + "!");
+  }
+
+  /*
+   * 4p. Метод printAverageRating выводит в консоль средний балл студента за три
+   * семестра. В него передаются средние оценки, например: printAverageRating(4.8,
+   * 4.5, 3.9);.
+   * Допиши метод calculateAverageRating, который будет рассчитывать средний балл
+   * за три семестра и возвращать его значение.
+   */
+
+  public void printAverageRating(double firstSemesterRating, double secondSemesterRating, double thirdSemesterRating) {
+    double averageRating = calculateAverageRating(firstSemesterRating, secondSemesterRating, thirdSemesterRating);
+    System.out.println("Средний балл по итогам трёх семестров " + averageRating);
+  }
+
+  public double calculateAverageRating(double a, double b, double c) {
+    return (a + b + c) / 3;
+  }
+
 }
