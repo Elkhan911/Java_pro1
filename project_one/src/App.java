@@ -311,7 +311,15 @@ public class App {
     int result = a * b;
     System.out.println("Результат умножения - " + result);
 
-    multiply(10, 10);
+  }
+
+  /*
+   * 2p. Объяви метод getAgeCar с двумя параметрами: carName и year. Метод должен
+   * выводить в консоль: "<марка машины> <год> года выпуска".
+   */
+
+  public void getAgeCar(String carName, int year) {
+    System.out.println(carName + " " + year + " года выпуска");
   }
 
 }
